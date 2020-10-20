@@ -62,13 +62,13 @@ begin
 
     trig_tb <= not trig_tb after 5 ns;
 
-    a_tb <= std_logic_vector(to_unsigned(70, N_tb)) after 20 ns,
-            std_logic_vector(to_unsigned(255, N_tb)) after 70 ns;
+    a_tb <= std_logic_vector(to_unsigned(250, N_tb)) after 20 ns,
+            std_logic_vector(to_unsigned(129, N_tb)) after 70 ns;
             
-    b_tb <= std_logic_vector(to_unsigned(2, N_tb)) after 5 ns,
+    b_tb <= std_logic_vector(to_unsigned(250, N_tb)) after 5 ns,
             std_logic_vector(to_unsigned(4, N_tb)) after 30 ns;
             
-    sel_tb <= "1101" after 10 ns;
+    sel_tb <= "1111" after 10 ns;
     
     DUT: ALU
         generic map(
